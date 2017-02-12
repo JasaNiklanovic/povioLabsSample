@@ -44,14 +44,14 @@ export class Restaurants extends Component {
     const filteredRestaurants = this.state.restaurants.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS));
 
     return (
-      <div style={styles.container}>
+      <section className="restaurants" style={styles.container}>
         <Search searchUpdated={this.searchUpdated}/>
         <div style={styles.restaurants}>
           {filteredRestaurants.map((restaurant, i) => (
             <Restaurant key={i} restaurant={restaurant}/>
           ))}
         </div>
-      </div>
+      </section>
     );
   }
 }
