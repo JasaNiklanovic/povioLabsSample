@@ -1,7 +1,7 @@
 # povioLabsSample
 Daily meal app
 
-To run use NPM scripts:
+To run use NPM scripts (first run npm install):
 
     npm run build to build an optimized version of your application in /dist.
 
