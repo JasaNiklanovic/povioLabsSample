@@ -3,8 +3,8 @@ import SearchInput, {createFilter} from 'react-search-input'
 
 const styles = {
   title: {
-    padding: '4rem',
-    backgroundImage: 'url("http://cdn.havehalalwilltravel.com/wp-content/uploads/2016/06/The-mad-sailor-halal-food-cafe-fish-and-chips.jpg?x87844")',
+    padding: '5rem',
+    backgroundImage: 'url("http://d3pah2c10lnl36.cloudfront.net/images/menu_detail_lunch_02_.jpg")',
     color: 'white',
     backgroundSize: 'cover'
   },
@@ -20,12 +20,9 @@ const styles = {
 export class Search extends Component {
   constructor(props, context) {
     super(props, context);
-
     this.props = props;
-    console.log(props,'props');
   }
   render() {
-
     return (
       <div style={styles.title}>
         <SearchInput placeholder="Search nearby restaurants by name, location" style={styles.input} className="search-input" onChange={this.props.searchUpdated} />

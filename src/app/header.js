@@ -4,7 +4,7 @@ const styles = {
   header: {
     display: 'flex',
     alignItems: 'center',
-    backgroundColor: '#1f1f1f'
+    backgroundColor: 'rgb(223, 103, 42)'
   },
   title: {
     flex: 1,
