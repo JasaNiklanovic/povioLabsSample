@@ -14,7 +14,9 @@ export class Footer extends Component {
   render() {
     return (
       <footer style={styles.footer}>
-        Built by @jasaniklanovic
+        <a href="https://github.com/JasaNiklanovic" target="_blank">
+          Built by @jasaniklanovic
+        </a>
       </footer>
     );
   }
