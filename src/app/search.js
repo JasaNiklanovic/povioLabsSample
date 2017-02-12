@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SearchInput, {createFilter} from 'react-search-input'
+import SearchInput from 'react-search-input';
 
 const styles = {
   title: {
@@ -25,8 +25,12 @@ export class Search extends Component {
   render() {
     return (
       <div style={styles.title}>
-        <SearchInput placeholder="Search nearby restaurants by name, location" style={styles.input} className="search-input" onChange={this.props.searchUpdated} />
+        <SearchInput placeholder="Search nearby restaurants by name, location" style={styles.input} className="search-input" onChange={this.props.searchUpdated}/>
       </div>
     );
   }
 }
+
+Search.propTypes = {
+  searchUpdated: React.PropTypes.func.isRequired
+};

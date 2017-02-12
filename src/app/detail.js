@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import {Header} from './header';
-import {Restaurants} from './restaurants/restaurants';
 import {RestaurantDetail} from './restaurants/restaurantDetail';
 import {Footer} from './footer';
-import SearchInput, {createFilter} from 'react-search-input'
+import {createFilter} from 'react-search-input';
 import axios from 'axios';
 
 const styles = {
@@ -43,7 +42,7 @@ export class Detail extends Component {
         <main style={styles.main}>
           <div style={styles.restaurants}>
             {restaurantDetail.map((restaurant, i) => (
-              <RestaurantDetail restaurant={restaurant}/>
+              <RestaurantDetail key={i} restaurant={restaurant}/>
             ))}
           </div>
         </main>
@@ -52,3 +51,7 @@ export class Detail extends Component {
     );
   }
 }
+
+Detail.propTypes = {
+  params: React.PropTypes.object.isRequired
+};

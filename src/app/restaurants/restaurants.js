@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import SearchInput, {createFilter} from 'react-search-input'
+import {createFilter} from 'react-search-input';
 import {Search} from '../search';
-
 import {Restaurant} from './restaurant';
 const KEYS_TO_FILTERS = ['key', 'title', 'location', 'address'];
 
@@ -25,7 +24,7 @@ const styles = {
 export class Restaurants extends Component {
   constructor() {
     super();
-    this.state = {restaurants: [], searchTerm:''};
+    this.state = {restaurants: [], searchTerm: ''};
     this.searchUpdated = this.searchUpdated.bind(this);
   }
 
@@ -37,8 +36,8 @@ export class Restaurants extends Component {
       });
   }
 
-  searchUpdated (term) {
-    this.setState({searchTerm: term})
+  searchUpdated(term) {
+    this.setState({searchTerm: term});
   }
 
   render() {
