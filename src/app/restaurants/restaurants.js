@@ -38,7 +38,6 @@ export class Restaurants extends Component {
   }
 
   searchUpdated (term) {
-    console.log(term);
     this.setState({searchTerm: term})
   }
 

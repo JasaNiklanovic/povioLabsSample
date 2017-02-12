@@ -18,7 +18,7 @@ export class Header extends Component {
     return (
       <header style={styles.header}>
         <p style={styles.title}>
-          <a href="" target="_blank">
+          <a href="/">
             Daily meal finder
           </a>
         </p>

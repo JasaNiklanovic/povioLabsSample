@@ -23,7 +23,12 @@ const styles = {
   }
 };
 
-export class Restaurant extends Component {
+export class RestaurantDetail extends Component {
+  constructor(props, context) {
+    super(props, context);
+    this.props = props;
+  }
+
   render() {
     return (
       <div style={styles.restaurant}>
@@ -39,6 +44,6 @@ export class Restaurant extends Component {
   }
 }
 
-Restaurant.propTypes = {
+RestaurantDetail.propTypes = {
   restaurant: React.PropTypes.object.isRequired
 };

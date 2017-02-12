@@ -12,7 +12,7 @@ import './index.scss';
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={Main}/>
-    <Route path="restaurant/:id" component={Detail}/>
+    <Route name='details' path="restaurant/:key" component={Detail}/>
   </Router>,
   document.getElementById('root')
 );
