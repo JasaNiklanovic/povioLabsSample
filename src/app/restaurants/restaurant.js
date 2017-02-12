@@ -1,0 +1,40 @@
+import React, {Component} from 'react';
+
+const styles = {
+  restaurant: {
+    height: '15rem',
+    width: '15rem',
+    border: '1px solid lightgray',
+    borderRadius: '1rem',
+    margin: '1rem',
+    padding: '1rem'
+  },
+  logo: {
+    width: '5rem',
+    height: '5rem',
+    float: 'right',
+    margin: '0 0 .5rem .5rem'
+  },
+  h3: {
+    fontSize: '1.5rem',
+    margin: '0 0 2rem 0'
+  }
+};
+
+export class Restaurant extends Component {
+  render() {
+    return (
+      <div style={styles.restaurant}>
+        <img style={styles.logo} src={this.props.restaurant.logo}/>
+        <h3 style={styles.h3}>
+          {this.props.restaurant.title}
+        </h3>
+        <p>{this.props.restaurant.address}</p>
+      </div>
+    );
+  }
+}
+
+Restaurant.propTypes = {
+  restaurant: React.PropTypes.object.isRequired
+};
