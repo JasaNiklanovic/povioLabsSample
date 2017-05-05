@@ -1,5 +1,4 @@
-# povioLabsSample
-Daily meal app
+# Daily meal app
 
 To run use NPM scripts (first run npm install):
 
